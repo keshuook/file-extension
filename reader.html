@@ -1,0 +1,39 @@
+<input type="file" onchange="readFile(this)">
+
+<script>
+function decrypt(a){
+if (a == 1){
+b += b.replace(//g,"a");
+b += b.replace(/e/g,"b");
+b += b.replace(/k/g,"c");
+b += b.replace(//g,"d");
+b += b.replace(/?/g,"e");
+b += b.replace(/</g,"f");
+return (b);
+}else if(a == 2){
+
+}
+}
+function readFile(input) {
+  let file = input.files[0];
+
+  let reader = new FileReader();
+
+  reader.readAsText(file);
+
+  reader.onload = function() {
+var b = (reader.result);
+	if (b.charAt(0) == ""){
+
+document.write(b);
+	}else{
+	
+	}
+  };
+
+  reader.onerror = function() {
+    console.log(reader.error);
+  };
+
+}
+</script>
